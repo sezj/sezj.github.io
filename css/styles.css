@@ -1,0 +1,252 @@
+/* reset */
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+img, dl, dt, dd, ol, ul, li {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-family: inherit;
+	vertical-align: baseline;
+	font-size:100%;
+	line-height:1em;
+}
+ol, ul {
+	list-style: none;
+}
+
+/* type */
+body {
+	font-family: 'PT Sans', Arial, sans-serif;
+	color:#F0F0DC;
+}
+h1 {
+	font-family: 'Josefin Slab', Georgia, serif;
+	font-weight:normal;
+	font-size: 2.5em;
+	line-height: 2em;
+}
+h2 {
+	color:#f16aa3;
+	font-size: 1.25em;
+	font-weight:normal;
+	line-height: 1.5em;
+	margin-bottom: .5em;
+	font-family: 'PT Serif', Georgia, serif;
+}
+h3 {
+	font-size: 1.25em;
+	line-height: 1.25em;
+	font-weight:normal;
+	margin-bottom: 1em;  
+	color:#f16aa3;
+}
+h4 {
+	font-size: 1.25em;
+	font-weight:normal;
+	line-height: 1em;
+	margin-bottom: .5em;
+	font-family: 'PT Serif', Georgia, serif;
+}
+h5 {
+	font-size: 1em;
+	line-height: 1em;
+	font-weight:normal;
+	margin-bottom: 1em;
+}
+h6 {
+	font-size: 1em;
+	font-weight:normal;
+	line-height: 1em;
+	margin-bottom: .5em;
+}
+p, ul, blockquote, pre, td, th, label {
+	font-size: 1em;
+	line-height: 1.5em;
+	margin-bottom: 1em;
+}
+p {
+	font-size: 0.75em;
+}
+
+/*general style*/
+body {
+	background:#19AFAF url(../images/tile.png) repeat-x; 
+
+}
+a:link {
+	color:#ffffff;
+}
+a:active {
+	color:#abfafa;
+
+}
+a:visited {
+	color:#dcfafa;
+}
+a:hover {
+	color:#abfafa;
+	text-decoration:none;
+}
+.clear {
+	clear:both;
+}
+section, article, header, footer, nav {
+	display:block;
+}
+
+/* layout */
+#wrapper {
+	width:940px; 
+	margin:0 auto; 
+	overflow:hidden;
+}
+#logo 	{
+	width:500px;
+	float:left;
+	padding-left:5px;
+}
+#logo a {
+	text-decoration:none;
+}
+
+nav #main-nav 		{width:626px; float:right;overflow:hidden; margin-top:30px; font-size:1.125em; text-transform:uppercase;}
+nav #main-nav li	{float:left; margin-left: 65px;}
+nav #main-nav li:first-child {margin-left:0;}
+nav #main-nav li.current a {color:#f2f9c1;} 
+#intro 	{
+	clear:both;
+	margin:20px 0 0 0;
+	width:526px; 
+	padding-right:90px;
+	float:right; 
+}
+#intro em {
+	font-size:2em;
+	margin:0 .25em 0 0;
+}
+#intro h6 em {
+	font-size:1.5em;
+	margin:0 .25em 0 0;
+}
+#intro li {
+	font-size: 0.75em;
+	display:inline;
+	margin-right:2em;
+}
+#content {
+	clear:both;
+	overflow:hidden;
+}
+#portfolio-grid {
+	overflow:hidden; 
+	margin-top:2em;
+}
+#portfolio-grid li 	{
+	float:left; 
+	margin-left:25px; 
+	width:290px; 
+	margin-bottom:1em; 
+	margin:0 0 20px 25px;
+	text-align:center; 
+	position:relative;
+}
+#portfolio-grid li a img {
+	border:1px solid #2E7070;
+	width:288px;
+}
+#portfolio-grid li.first {
+	clear:both;
+	margin-left:5px;
+}
+#portfolio-grid li ul { 
+	margin:none;
+	clear:both;
+}
+
+#portfolio-grid li ul li	{
+	float:none; 
+	
+	width:auto; 
+	margin:none;
+}
+.description {
+	background:#2E7070 url(../images/description-tile.png) repeat-x;
+	display:block; 
+	margin-top:5px;
+	padding:20px 20px 10px 20px; 
+	width:250px; 
+	height:auto;
+	height:145px;
+} 
+.description h3 {
+	cursor:pointer;
+	text-decoration:underline;
+}
+.description h3:hover {
+	text-decoration:none;
+	color:#abfafa;
+}
+.addl {
+	display:none;
+}
+#portfolio-grid h3, #portfolio-grid h4, #portfolio-grid h5, #portfolio-grid p {
+	text-align:left;
+}
+#portfolio-grid h4 	{
+	font-style:italic; 
+}
+#portfolio-grid p {
+	font-size:.75em;
+	margin:0;
+}
+footer {
+	padding:1em 0;
+	border-top:1px solid #2E7070; 
+	overflow:hidden; 
+	display:block; 
+	margin-top:1em;
+}
+#copyright {
+	width:290px; 
+	float:right;
+	font-size:.75em;
+}
+#quote {
+	width:293px; 
+	float:left;
+} 
+#quote-container {
+	background:#f16aa3;
+	border:1px solid #2E7070; 
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	font-family: 'PT Serif', Georgia, serif;
+	padding:10px;
+}
+#quote blockquote {
+	font-style:italic; 
+	margin-bottom:0;    
+}
+
+/* misc */
+.icon {
+}
+.new-window {
+	padding:0 0 2px 3px;
+	width:10px;
+	height:10px;
+}
+.hidden {
+	display:none;
+}
+.align_right {
+	float:right;
+	margin:0 0 1em 1.25em;
+}
+.align_left {
+	float:left;
+}
